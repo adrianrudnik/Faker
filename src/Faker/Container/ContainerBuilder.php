@@ -10,6 +10,7 @@ use Faker\Extension\BloodExtension;
 use Faker\Extension\ColorExtension;
 use Faker\Extension\DateTimeExtension;
 use Faker\Extension\FileExtension;
+use Faker\Extension\IetfExtension;
 use Faker\Extension\NumberExtension;
 use Faker\Extension\UuidExtension;
 use Faker\Extension\VersionExtension;
@@ -63,6 +64,7 @@ final class ContainerBuilder
             NumberExtension::class => Core\Number::class,
             VersionExtension::class => Core\Version::class,
             UuidExtension::class => Core\Uuid::class,
+            IetfExtension::class => Core\Ietf::class,
         ];
     }
 
